@@ -15,10 +15,10 @@
 "
 " set cpt=.,k,b
 " set completeopt=menu,menuone,noselect
-" let g:apc_enable_ft = {'text':1, 'markdown':1, 'php':1}
+" let g:apc_enable_ft = {'php':1}
 
-let g:apc_enable_ft = get(g:, 'apc_enable_ft', {})    " enable filetypes
-let g:apc_enable_tab = get(g:, 'apc_enable_tab', 1)   " remap tab
+let g:apc_enable_ft = get(g:, 'apc_enable_ft', {'text':1, 'markdown':1}) " enable filetypes
+let g:apc_enable_tab = get(g:, 'apc_enable_tab', 0)   " remap tab
 let g:apc_min_length = get(g:, 'apc_min_length', 2)   " minimal length to open popup
 let g:apc_key_ignore = get(g:, 'apc_key_ignore', [])  " ignore keywords
 let g:apc_trigger = get(g:, 'apc_trigger', "\<c-n>")  " which key to trigger popmenu
